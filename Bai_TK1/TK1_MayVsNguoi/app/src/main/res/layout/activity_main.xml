@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#1f35de"
+             >
+
+             <TextView
+                 android:id="@+id/tv_Cpu"
+                 android:layout_width="wrap_content"
+                 android:layout_height="40dp"
+                 android:background="#1f35de"
+                 android:text="Điểm của máy:"
+                 android:textAlignment="center"
+                 android:textColor="#f0ebec"
+                 android:textSize="25dp" />
+
+             <TextView
+                 android:id="@+id/Cpu"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:text="0"
+                 android:textSize="30dp"
+                 android:textColor="#f0ebec"
+
+                 />
+         </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewCpu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/imageViewCpu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/imageViewCpu3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/back" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_kqCpu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#70de52"
+            android:text=""
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <TextView
+            android:id="@+id/tv_ResulCpu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:text=""
+                android:textAlignment="center"
+            />
+
+            <Button
+                android:id="@+id/btn_play"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Play"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_ResulPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:paddingTop="10dp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_kqPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:background="#70de52"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewPlayer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/imageViewPlayer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/imageViewPlayer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/back" />
+
+    </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="#ed0909">
+
+         <TextView
+             android:id="@+id/tv_Player"
+             android:layout_width="wrap_content"
+             android:layout_height="40dp"
+             android:text="Điểm của bạn:"
+             android:textSize="25dp"
+             android:textAlignment="center"
+             android:textColor="#f0ebec"
+             android:background="#ed0909"/>
+         <TextView
+             android:id="@+id/Player"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:text="0"
+             android:textSize="30dp"
+             android:textColor="#f0ebec"
+
+             />
+
+     </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
